@@ -1,0 +1,466 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "gift ideas dialog",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GiftIdea",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "samples": [
+                                "my {relationship}",
+                                "it is for my {relationship}",
+                                "my {relationship} {name}",
+                                "for my {relationship} {name}"
+                            ]
+                        },
+                        {
+                            "name": "relationship",
+                            "type": "RELATIONSHIPS",
+                            "samples": [
+                                "for my {relationship} {name}",
+                                "my {relationship} {name}",
+                                "it is for my {relationship}",
+                                "my {relationship} "
+                            ]
+                        },
+                        {
+                            "name": "preference",
+                            "type": "ARTISTS",
+                            "samples": [
+                                "she likes {preference} music",
+                                "he likes {preference} music",
+                                "{preference} music"
+                            ]
+                        },
+                        {
+                            "name": "occasion",
+                            "type": "OCCASIONS",
+                            "samples": [
+                                "his {occasion}",
+                                "her {occasion}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I need a {occasion} gift idea",
+                        "I need a {occasion} gift",
+                        "a gift idea for my {relationship} {name}",
+                        "I need a gift idea for my {relationship}",
+                        "give me a gift idea",
+                        "my {relationship} {name}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Card",
+                    "slots": [
+                        {
+                            "name": "occasion",
+                            "type": "OCCASIONS",
+                            "samples": [
+                                "his {occasion}",
+                                "her {occasion}"
+                            ]
+                        },
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "samples": [
+                                "{name}"
+                            ]
+                        },
+                        {
+                            "name": "message",
+                            "type": "AMAZON.TextMessage",
+                            "samples": [
+                                "{message}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "send a card",
+                        "card please",
+                        "yes include a card",
+                        "include a card"
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "AMAZON.Movie"
+                        }
+                    ],
+                    "samples": [
+                        "{answer}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "OCCASIONS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "prime day"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "graduation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wedding"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "anniversary"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "birthday"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RELATIONSHIPS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "pet",
+                                "synonyms": [
+                                    "dog",
+                                    "cat",
+                                    "fish"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spouse",
+                                "synonyms": [
+                                    "husband",
+                                    "wife"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "friend",
+                                "synonyms": [
+                                    "B. F. F.",
+                                    "buddy"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sister",
+                                "synonyms": [
+                                    "big sister",
+                                    "little sister",
+                                    "sis"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brother",
+                                "synonyms": [
+                                    "big bro",
+                                    "little brother",
+                                    "big brother",
+                                    "bro"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "father",
+                                "synonyms": [
+                                    "dad"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mother",
+                                "synonyms": [
+                                    "mom"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ARTISTS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Bruno Mars",
+                                "synonyms": [
+                                    "Pop"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ed Sheeran",
+                                "synonyms": [
+                                    "Pop"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Taylor Swift",
+                                "synonyms": [
+                                    "Pop"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Miranda Lambert",
+                                "synonyms": [
+                                    "Country"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Carrie Underwood",
+                                "synonyms": [
+                                    "Country"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jason Aldean",
+                                "synonyms": [
+                                    "Country"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The Who",
+                                "synonyms": [
+                                    "Classic Rock"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The Rolling Stones",
+                                "synonyms": [
+                                    "Classic Rock"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Led Zeppelin",
+                                "synonyms": [
+                                    "Classic Rock"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "GiftIdea",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1256870445656.857872406751"
+                            }
+                        },
+                        {
+                            "name": "relationship",
+                            "type": "RELATIONSHIPS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.830632960478.1390334351931"
+                            }
+                        },
+                        {
+                            "name": "preference",
+                            "type": "ARTISTS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1393468180730.1332129238027"
+                            }
+                        },
+                        {
+                            "name": "occasion",
+                            "type": "OCCASIONS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1393468180730.731807720756"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Card",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "occasion",
+                            "type": "OCCASIONS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.433456178766.1101259376048"
+                            }
+                        },
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.847811733160.1524691685124"
+                            }
+                        },
+                        {
+                            "name": "message",
+                            "type": "AMAZON.TextMessage",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.433456178766.20431537574"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.830632960478.1390334351931",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is your relationship with {name} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.830632960478.1481880037910",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what are you celebrating?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the ocassion?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1256870445656.857872406751",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "who is this gift for?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1393468180730.731807720756",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is the ocassion?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1393468180730.1332129238027",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What type of Music does {name} like?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.433456178766.20431537574",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What message do you want on the card?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.433456178766.1101259376048",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is the ocassion?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.847811733160.1524691685124",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "who is this gift for?"
+                    }
+                ]
+            }
+        ]
+    }
+}
