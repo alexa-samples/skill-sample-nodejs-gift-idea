@@ -373,7 +373,7 @@
                         },
                         {
                             "name": "message",
-                            "type": "AMAZON.TextMessage",
+                            "type": "AMAZON.SearchQuery",
                             "confirmationRequired": false,
                             "elicitationRequired": true,
                             "prompts": {
