@@ -93,7 +93,7 @@
                         },
                         {
                             "name": "message",
-                            "type": "AMAZON.TextMessage",
+                            "type": "AMAZON.SearchQuery",
                             "samples": [
                                 "{message}"
                             ]
